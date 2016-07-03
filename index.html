@@ -1,0 +1,245 @@
+<!--
+Theme Name: tfrangiem
+Author: Teresa Frangie
+Description: a simple theme to show all my work.
+Version: 1.0
+-->
+
+<!-----Table of Content-----
+|							|
+|	1. Head					|
+|		Charset				|
+|		Stylesheet			|
+|		Viewport			|
+|		Icons/favicon		|
+|		Title				|
+|	2. Body					|
+|		Nav Bar				|
+|	3. Content				|
+|		Home				|
+|		About				|
+|		Portfolio			|
+|		Resume				|
+|		Contact				|
+|	4. Footer				|
+|___________________________>
+ 
+<!DOCTYPE html>
+<html>
+
+<!-- 1. Head -->
+	<head>
+		<!-- Setting charset will allow the website to dsplay any character -->
+		<meta charset="UTF-8">
+		<!-- Make a reference to the stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
+		<!--  Use viewport to fix you website in smaller devices, such as phone, tablets, etc. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Using 'icon' we can customize the icon that appear on top of the tab -->
+		<link rel="icon" href="media/Icons/favicon.ico" type="image/icon">
+		<!-- Website title -->
+		<title>TFM - Front-End Web Developer</title>
+	
+	</head>
+
+<!-- 2. Body -->
+	<body>
+		<nav>
+		
+		<!--Here is where you define the logo of your website, could be text or an image-->
+		<a href="#" class="logo">Teresa Frangie</a>
+		<!--The menu-btn will appear when you clicked the navicon, it'll show all the menu items-->
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<!--The navicon is used for the mobil version, when it shrinks it will appear-->
+		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<!--Giving class atribute to the menu will give you more control of the style of the menu-->
+		<ul class="menu">
+			<li class="current home"><a href="#first">Home</a></li>
+			<li class="current about"><a href="#second">About</a></li>
+			<li class="current portfolio"><a href="#third">Portfolio</a></li>
+			<li class="current resume"><a href="#fourth">Resume</a></li>
+			<li class="current contact"><a href="#fifth">Contact</a></li>
+		</ul>
+		</nav>
+
+		<!-- Home: Image and Text -->
+			<section id="first">
+				<p>Front-End Web Developer</p>			
+			</section>
+
+		<!-- About: Text -->
+			
+			<section id="second"><h1>About</h1>
+			
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus vestibulum lectus ut pretium. Integer justo sapien, pretium ut commodo in, sagittis ac risus. Pellentesque ligula purus, aliquam in augue non, placerat interdum leo. Duis sagittis mi vel mi porta pretium. Aliquam sit amet vehicula metus, at scelerisque magna. Morbi neque arcu, elementum at turpis eget, imperdiet suscipit metus. Nunc luctus auctor congue. Ut ultricies tempor augue id aliquet. Fusce vulputate sagittis luctus. Mauris dolor mi, congue eu nibh ut, ullamcorper pulvinar dui. Sed et pharetra odio. Vestibulum vel lobortis justo. Phasellus nulla ipsum, mollis vitae hendrerit a, ultrices ultrices sapien. Maecenas placerat convallis mauris vel auctor.</p>
+				
+			<h2>I LOVE...</h2>
+
+				<img src="media/ilove/1.png" alt="Plane" style="width:80px">
+				<img src="media/ilove/2.png" alt="Zelda" style="width:80px">
+				<img src="media/ilove/3.png" alt="Bike" style="width:80px">
+				<img src="media/ilove/4.png" alt="Laptop" style="width:80px">
+				<img src="media/ilove/5.png" alt="Coffee" style="width:80px">
+				<img src="media/ilove/6.png" alt="Ships" style="width:80px">
+				<img src="media/ilove/8.png" alt="Food" style="width:80px">
+				<img src="media/ilove/9.png" alt="Poker" style="width:80px">
+				<img src="media/ilove/10.png" alt="Superman" style="width:80px">
+				<img src="media/ilove/11.png" alt="City" style="width:80px">
+				<img src="media/ilove/12.png" alt="Drums" style="width:80px">
+
+			</section>
+			
+		<!-- Second Image -->
+			<figure class="imageTwo"></figure>
+		
+		<!-- Portfolio -->
+			<section id="third"><h1>Portfolio</h1>
+				<a href="https://github.com/tfrangiem"><img src="media/icons/github.png" alt="GitHub" style="width:200px"></a>
+			</section>
+		
+		<!-- Third Image -->
+			<figure class="imageThree"></figure>
+		
+		<!-- Resume -->
+			<section id="fourth"><h1>Resume</h1>
+		
+		<!-- Tabs to display the resume content -->
+		<article class="container">
+
+		<ul class="tabs">
+			<li class="tab-link current" data-tab="tab-1"><img src="media/icons/skills.png" alt="Skills" style="width:80px"></li>
+			<li class="tab-link" data-tab="tab-2"><img src="media/icons/languages.png" alt="Languages" style="width:80px"></li>
+			<li class="tab-link" data-tab="tab-3"><img src="media/icons/development.png" alt="Development" style="width:80px"></li>
+			<li class="tab-link" data-tab="tab-4"><img src="media/icons/experience.png" alt="Experience" style="width:80px"></li>
+		</ul>
+
+			<!-- First tab: Skills-->
+			<article id="tab-1" class="tab-content current">
+				<img src="media/icons/skillschart.png" alt="Plane" style="width:1351px">
+			</article>
+			
+			<!-- Second tab: Languages-->
+			<article id="tab-2" class="tab-content">
+				 <img src="media/icons/lang.png" alt="Languages" style="width:756px">
+			</article>
+			
+			<!-- Third tab: Development -->
+			<article id="tab-3" class="tab-content">
+				<h3>Technology Service Corps / Development Stream</h3>
+				NPower Canada | 2016
+				<br><br>
+				<h3>Essential Pathways to Employment (EPE)</h3>
+				Riverdale Immigrant Women's Center | 2016
+				<br><br>
+				<h3>English Certificate</h3>
+				King George International College | 2014
+				<br><br>
+				<h3>Bachelor Degree</h3>
+				Systems Engineering, IUP “Santiago Mariño”, Venezuela | 2010
+			</article>
+			
+			<!-- First tab: Experience -->
+			<article id="tab-4" class="tab-content">
+
+				<h3>Front-End Web Developer (Volunteer)</h3>
+				Riverdale Immigrant Women's Center | March 2016 – Present
+				<br><br>
+					- Creating the new front-end to the organization website: www.riwc.ca
+					- Redesigned website in 2 days, following feedback and incorporating best practices, exceeding user's expectation (HTML5, CSS3, WordPress)
+
+				<br><br>
+
+				<h3>Front-End Web Developer</h3>
+				Freelance, Toronto | July 2015 - Present
+				<br><br>
+					- Create responsive layouts in WordPress suitable for desktop and mobile devices.
+
+				<h3>IT Technician (Volunteer)</h3>
+				Riverdale Immigrant Women's Center | March - May 2016
+				<br><br>
+					- Responsible for the high performance of 15 computers
+					- Coached 7 seniors through Microsoft Office (Word and PowerPoint), increasing their knowledge by 85% in a three week program
+
+				<br><br>
+
+				<h3>Team Player (Volunteer)</h3>
+				PrideHouseTO at 2015 Pan Am/Parapan Am Games | April 2015
+				<br><br>
+					- Worked in a team setting up the main area, welcoming visitors in English and Spanish, answering questions about the Pan Am/Parapan Am Games and the City of Toronto
+
+				<br><br>
+
+				<h3>Museum Staff (Volunteer)</h3>
+				aluCine Latin Film + Media Arts Festival | February - March 2015
+				<br><br>
+					- Worked in a team  to paint museum walls, repair drywall, and install art pieces
+
+				<br><br>
+
+				<h3>Web Designer | Systems Analyst</h3>
+				Pentech, Venezuela | July 2013 - December 2014
+				<br><br>
+					- Redesigned and updated the intranet (SharePoint Designer/HTML/CSS/Photoshop)
+					- Designed and managed communications (HTML/CSS/Photoshop/MS Office)
+					- Created intuitive internal public folders for document storage (CSS/SharePoint Designer)
+					- Designed simple and clear presentations out of complex data (PowerPoint/Prezi) 
+					- Increased user traffic 75% by developing an interactive and intuitive new theme for the company’s intranet
+
+				<br><br>
+
+				<h3>User Support Specialist | Helpdesk</h3>
+				Pentech, Venezuela | January 2013 - June 2013
+				<br><br>
+					- Provided live and remote (online and phone) technical support and training to 200 users
+					- Solved problems related to document formatting, processing and filing
+					- Classified, analyzed and documented resolutions in ServiceDesk Plus
+
+				<br><br>
+
+				<h3>Systems Analyst | Technical Support</h3>
+				Fundación Complejo Cultural de Maturín, Venezuela | January 2010 - December 2012
+				<br><br>
+					- Maintained, analyzed, troubleshot, and supported 35 desktop computer systems, hardware and peripherals
+					- Provided technical end-user support workshop about basic hardware and software
+					- Successfully networked 35 computers to router, printers and created public folders to facilitate the sharing of documents
+					- Relocated HR department and set up work environment for each employee, building the network and made privileges for each computer
+				
+			</article>		
+			</section>
+		
+		<!-- Fourth Image -->
+			<figure class="imageFour"></figure>
+			
+		<!-- Contact -->
+			<section id="fifth">
+			
+			<h1>Contact</h1>
+
+				<form action="MAILTO:tfrangiem@gmail.com" method="post"  id="myForm" autocomplete="off" enctype="text/plain">
+
+				<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" required/>
+
+				<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" required/>
+
+				<textarea id="comment" name="comment" class="validate[required,length[6,300]] feedback-input" placeholder="Comment" required></textarea>
+
+				<input type="submit" value="Send" id="sendButton"/>
+				<input type="reset" value="Reset" id="sendButton"/>
+
+				</form>			
+							
+			</section>
+
+		<!-- jQuery Library -->
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		
+		<!-- Making reference to the JS file -->
+		<script src="js/myJs.js"></script>
+		
+		<!-- Footer -->
+		<footer>
+		&copy; Copyright Teresa Frangie 2016
+		</footer>	
+	
+	</body>
+</html>

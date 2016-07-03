@@ -1,0 +1,611 @@
+/*   
+Theme Name: tfrangiem
+Author: Teresa Frangie
+Description: a simple theme to show all my work.
+Version: 1.0
+*/
+
+/*-----Table of Content-----
+|							|
+|	1. Main style			|
+|		*					|
+|		body				|
+|		Links				|
+|		Nav Bar				|
+|			Logo			|
+|		Paragraph			|
+|		h1 h2				|
+|		Section				|
+|		Figure				|
+|		Article				|
+|	2. Content				|
+|		Home				|
+|		About				|
+|		Portfolio			|
+|		Resume				|
+|		Contact				|
+|	3. Responsiveness		|
+|__________________________*/
+
+/* 1. Main Style */
+/* Removing the margin and padding of the website */
+*{
+	margin:0;
+	padding:0;
+}
+
+/* Setting margin and the font to the whole body */
+body{
+	margin: 0;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/*All text tolor*/
+a{
+	color:black;
+	text-decoration:none;
+}
+
+/*The nav class is going to give style to the top-left area*/
+nav{
+	background-color:#e6e6e6;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+/*With the logo class you can define the style of the top left area (because float:left) you can add text or an image*/
+.logo{
+	display: block;
+	float: left;
+	font-size: 2em;
+	padding: 10px 20px;
+	text-decoration: none;
+	color:black;
+}
+
+/*Here you can make changes to the nav */
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color:#e6e6e6;
+}
+
+/*You can add space between the menu items*/
+nav li a{
+	display: block;
+	padding: 20px 20px;
+	border-right: 1px solid grey;
+	text-decoration: none;
+}
+
+/*The hover selector at the menu class will define which style you want to give to all of the items when it's hover*/
+
+.home a:hover{
+	background-color:#849ff0;
+}
+
+.about a:hover{
+	background-color:#F083CC;
+}
+
+.portfolio a:hover{
+	background-color:#8FE9ED;
+}
+
+.resume a:hover{
+	background-color:#4FD7B3;
+}
+
+.contact a:hover{
+	background-color:#FFD34C;
+}
+
+/* With the pseudo class 'focus' the nav bar will show where the user is by changing the background of the menu */
+a.current:focus{
+	background:#ccc;
+}
+
+/* Setting the same style for all the paragraph tags */
+p{
+	white-space: wrap;
+	width:auto;
+	text-align:left;
+	margin-left:40px;
+	margin-right:40px;
+	margin-bottom: 50px;
+}
+
+/* Setting the same style for all the h1 tags */
+h1{
+	padding-top:50px;
+	margin:40px;
+	text-transform: uppercase;
+	font-size:28px;
+	text-align:left;
+}
+
+/* Setting the same style for all the h2 tags */
+h2{
+	text-align:center;
+	text-transform: uppercase;
+	font-size:20px;
+}
+
+/* Setting the same style for all the section tags */
+/* All the background atributes, selecting 'Cover' will transform the image to cover the background, 'fixed' will make the image stick to the background */
+section{
+	width:100%;
+	height:100vh; /*vh gets height's viewport*/
+	float: left;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color:none;
+}
+
+/* Setting the same style for all the figure tags */
+/* All the background atributes, selecting 'Cover' will transform the image to cover the background, 'fixed' will make the image stick to the background */
+figure{
+	width:100%;
+	height:100vh; /*vh gets height's viewport*/
+	float: left;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color:none;	
+}
+
+/* Sets all the images inside the article to cover all the background */
+article > img {
+	width:100%;
+}
+
+/* 2. Content */
+/* This is the 'Home' of the website, has an image with opacity */
+#first {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../media/images/1.jpg);
+	width:100%;
+}
+
+/* Setting the text in the 'Home' page with special atributes */
+#first > p {
+	background: rgba(0,0,0,0.3);
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	position: absolute; 
+	top: 400px; 
+	left: 0; 
+	max-width: 350px; 
+	padding: 30px;
+}
+
+/* Setting style to the second section wich is the 'About' area */
+#second{
+	background: #F083CC;
+	opacity:0.8;
+	width:auto;
+	height:auto; /*vh gets height's viewport*/
+	padding-bottom:60px;
+	text-align:center;
+}
+
+/* The second image will be fixed as the first one (Home) */
+.imageTwo{
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+	url("../media/images/2.jpg");
+}
+
+/* The 'Portfolio' area will have the same atributes as the 'About' area */
+#third{
+	background: #8FE9ED;
+	opacity:0.8;
+	height:auto; /*vh gets height's viewport*/
+	padding-bottom:40px;
+	text-align:center;
+}
+
+/* The third image will be fixed as the first and second one (Home, About) */
+.imageThree{
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+	url("../media/images/3.jpg");
+}
+
+/* The 'Resume' area will have the same atributes as the 'About' and 'Portfolio' area */
+#fourth{
+	background: #4FD7B3;
+	opacity:0.8;
+	height:auto; /*vh gets height's viewport*/
+	padding-bottom:40px;
+}
+
+/* The last image will be fixed as the other ones */
+.imageFour{
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+	url("../media/images/4.jpg");
+}
+
+/* The 'Contact' is the last area and will have the same style as the other areas */
+#fifth{
+	background: #FFD34C;
+	opacity:0.8;
+	height:100vh; /*vh gets height's viewport*/	
+}
+
+/* The form inside the 'Contact' section will have its own style */
+#fifth > form {
+	padding:40px;
+}
+
+/* Nav bar = Menu*/
+
+nav .menu{
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+}
+
+/* Menu icon 'The burger'*/
+
+nav .menu-icon{
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
+}
+
+nav .menu-icon .navicon{
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+
+/*Style the three lines navigation icon. The before is used to add content before the content of an element without need to be in the HTML and the after pseudo-element is usefull to add content after*/
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after{
+	background: black;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+
+nav .menu-icon .navicon:before{
+	top: 5px;
+}
+
+nav .menu-icon .navicon:after{
+	top: -5px;
+}
+
+/* The 'menu-btn' appear once you are in a smaller device and after you click the three line navicon (the burger) */
+
+nav .menu-btn{
+	display: none;
+}
+
+nav .menu-btn:checked ~ .menu{
+	max-height: 240px;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon{
+	background: transparent;
+}
+
+/* To change the three line navicon into an X */
+nav .menu-btn:checked ~ .menu-icon .navicon:before{
+	transform: rotate(-45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:after{
+	transform: rotate(45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after{
+	top: 0px;
+}
+
+/* Content */
+ 
+/* About */
+ 
+.aboutTable{
+	white-space:wrap;
+	width:auto;
+	text-align:center;
+	margin-left:40px;
+	margin-bottom: 50px;
+}
+ 
+#textAbout{
+	text-align:left;
+}
+ 
+/* Contact */
+ 
+/* Resume tabs */
+ 
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.tabs li{
+	background: none;
+	color: white;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: white;
+	color: #222;
+}
+
+.tab-content{
+	display: none;
+	background: white;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+} 
+
+#tab-link > img{
+	max-width: 100%;
+	height: auto;
+}
+
+#tab-1 > img{
+	max-width: 100%;
+	height: auto;
+}
+
+#tab-2 > img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* Styling the footer */
+footer{
+	padding: 1rem;
+	background-color: #595959;
+	color:white;
+	text-align:right;
+}
+
+/* Form */
+
+#myForm {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+	margin-top:30px;
+	margin-left: -260px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #ffbf00;
+	color: #3498db;
+	outline: none;
+	padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#ffbf00 solid 3px;
+}
+
+/* Form icons */
+#name{
+	background-image: url(../media/icons/f1.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(../media/icons/f2.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(../media/icons/f3.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+/* Send and Reset buttons */
+#sendButton{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 50%;
+	border: #ffbf00 solid 4px;
+	cursor:pointer;
+	background-color: #b3b3b3;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-top:-4px;
+	font-weight:700;
+}
+
+#sendButton:hover{
+	background-color: #999999;
+	color: white;
+}
+	
+#submit:hover {
+	color: #3498db;
+}
+
+/* Responsive View (small devices)  */
+/* With @media you can specify at which size you want the screen to change */
+@media screen and (min-width: 830px){
+	nav li{
+		float: left;
+	}
+
+	nav li a{
+		padding: 20px 30px;
+	}
+  
+	nav .menu{
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+    
+/* Using display:none reserves the three line icon to appear when it shrinks */
+	nav .menu-icon{
+		display: none;
+	}	
+	
+}
+
+/* 3. Responsiveness to small devices */
+@media screen and (max-width: 600px){
+
+	li > img{
+		max-width: 40px;
+
+	}
+
+	section > img{
+		max-width: 45px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	#first {
+		background-size:cover;
+		background-image: linear-gradient(
+		  rgba(0, 0, 0, 0.7), 
+		  rgba(0, 0, 0, 0.7)
+		),
+		url(../media/images/1s.jpg);
+	}
+	
+	.imageTwo{
+		background-size:cover;
+		background-image: linear-gradient(
+		  rgba(0, 0, 0, 0.7), 
+		  rgba(0, 0, 0, 0.7)
+		),
+		url(../media/images/2s.jpg);
+	}
+	
+	.imageThree{
+		background-size:cover;
+		background-image: linear-gradient(
+		  rgba(0, 0, 0, 0.7), 
+		  rgba(0, 0, 0, 0.7)
+		),
+		url(../media/images/3s.jpg);
+	}
+	
+	.imageFour{
+		background-size:cover;
+		background-image: linear-gradient(
+		  rgba(0, 0, 0, 0.7), 
+		  rgba(0, 0, 0, 0.7)
+		),
+		url(../media/images/4s.jpg);
+	}
+	
+	#third.img{
+		max-width: 45px;
+	}
+}
+	
+@media only screen and (max-width: 580px) {
+	#myForm{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
