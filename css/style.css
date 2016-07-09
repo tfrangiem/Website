@@ -38,7 +38,7 @@ Version: 1.0
 body{
 	margin: 0;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-}
+	}
 
 /*All text tolor*/
 a{
@@ -192,7 +192,7 @@ article > img {
 #second{
 	background: #F083CC;
 	opacity:0.8;
-	width:auto;
+	width:100%;
 	height:auto; /*vh gets height's viewport*/
 	padding-bottom:60px;
 	text-align:center;
@@ -231,6 +231,57 @@ article > img {
 	opacity:0.8;
 	height:auto; /*vh gets height's viewport*/
 	padding-bottom:40px;
+}
+
+/* Resume tabs */
+ 
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.tabs li{
+	background: none;
+	color: white;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: white;
+	color: #222;
+}
+
+.tab-content{
+	display: none;
+	background: white;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+} 
+
+#tab-link > img{
+	max-width: 100%;
+	height: auto;
+}
+
+#tab-1 > img{
+	max-width: 100%;
+	height: auto;
+}
+
+#tab-2 > img{
+	max-width: 100%;
+	height: auto;
 }
 
 /* The last image will be fixed as the other ones */
@@ -330,107 +381,32 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after{
 	top: 0px;
 }
 
-/* Content */
- 
-/* About */
- 
-.aboutTable{
-	white-space:wrap;
-	width:auto;
-	text-align:center;
-	margin-left:40px;
-	margin-bottom: 50px;
-}
- 
-#textAbout{
-	text-align:left;
-}
- 
-/* Contact */
- 
-/* Resume tabs */
- 
-.container{
-	width: 100%;
-	margin: 0 auto;
-}
-
-ul.tabs{
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-}
-
-ul.tabs li{
-	background: none;
-	color: white;
-	display: inline-block;
-	padding: 10px 15px;
-	cursor: pointer;
-}
-
-ul.tabs li.current{
-	background: white;
-	color: #222;
-}
-
-.tab-content{
-	display: none;
-	background: white;
-	padding: 15px;
-}
-
-.tab-content.current{
-	display: inherit;
-} 
-
-#tab-link > img{
-	max-width: 100%;
-	height: auto;
-}
-
-#tab-1 > img{
-	max-width: 100%;
-	height: auto;
-}
-
-#tab-2 > img{
-	max-width: 100%;
-	height: auto;
-}
-
-/* Styling the footer */
-footer{
-	padding: 1rem;
-	background-color: #595959;
-	color:white;
-	text-align:right;
-}
-
 /* Form */
 
 #myForm {
 	background-color:rgba(72,72,72,0.4);
-	padding-left:35px;
+
+ 	position: absolute;
+	border-radius: 10px;
+	/*	padding-left:35px;
+	width: 450px;
 	padding-right:35px;
 	padding-top:35px;
-	padding-bottom:50px;
-	width: 450px;
-	float: left;
-	left: 50%;
-	position: absolute;
+	padding-bottom:50px; 
+ 	
+ 	float: left;
+ 	left: 50%; 
 	margin-top:30px;
 	margin-left: -260px;
 	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
+	-webkit-border-radius: 7px;  */
 }
 
 .feedback-input {
 	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight:500;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	font-weight:500;
 	font-size: 18px;
-	border-radius: 0;
+	border-radius: 10px;
 	line-height: 22px;
 	background-color: #fbfbfb;
 	padding: 13px 13px 13px 54px;
@@ -493,21 +469,21 @@ input:focus, textarea:focus {
 
 /* Send and Reset buttons */
 #sendButton{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-	float:left;
-	width: 50%;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	float:left;
+	width: 150px;
 	border: #ffbf00 solid 4px;
 	cursor:pointer;
 	background-color: #b3b3b3;
 	color:white;
 	font-size:24px;
-	padding-top:22px;
-	padding-bottom:22px;
+	padding-top:10px;
+	padding-bottom:10px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 	margin-top:-4px;
-	font-weight:700;
+	font-weight:bold;
+	border-radius: 10px;
 }
 
 #sendButton:hover{
@@ -518,6 +494,15 @@ input:focus, textarea:focus {
 #submit:hover {
 	color: #3498db;
 }
+
+/* Styling the footer */
+footer{
+    padding: 20px;
+	background-color: #595959;
+	color:white;
+	text-align:center;
+}
+
 
 /* Responsive View (small devices)  */
 /* With @media you can specify at which size you want the screen to change */
@@ -596,16 +581,5 @@ input:focus, textarea:focus {
 	
 	#third.img{
 		max-width: 45px;
-	}
-}
-	
-@media only screen and (max-width: 580px) {
-	#myForm{
-		left: 3%;
-		margin-right: 3%;
-		width: 88%;
-		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;
 	}
 }
